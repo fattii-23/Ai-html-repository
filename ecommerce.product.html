@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Timeless Watches</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+
+    body{
+      background:#e9e9e9;
+    }
+
+    /* NAVBAR */
+
+    .navbar{
+      background:#17233c;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:18px 35px;
+    }
+
+    .logo{
+      color:white;
+      font-size:20px;
+      font-weight:bold;
+    }
+
+    .search-box{
+      width:420px;
+      padding:10px;
+      border:none;
+      border-radius:3px;
+    }
+
+    .nav-links a{
+      color:white;
+      text-decoration:none;
+      margin-left:20px;
+      font-size:16px;
+    }
+
+    /* MAIN CONTAINER */
+
+    .container{
+      width:85%;
+      margin:40px auto;
+      display:flex;
+      gap:30px;
+    }
+
+    /* LEFT SIDE */
+
+    .left{
+      width:55%;
+    }
+
+    .main-image img{
+      width:100%;
+      border-radius:10px;
+    }
+
+    .gallery{
+      display:flex;
+      gap:10px;
+      margin-top:12px;
+    }
+
+    .gallery img{
+      width:70px;
+      height:70px;
+      object-fit:cover;
+      border-radius:5px;
+      border:2px solid white;
+      cursor:pointer;
+    }
+
+    /* RIGHT SIDE */
+
+    .right{
+      width:45%;
+      background:white;
+      padding:25px;
+      border-radius:10px;
+      box-shadow:0px 0px 8px rgba(0,0,0,0.1);
+    }
+
+    .right h1{
+      font-size:48px;
+      color:#333;
+      margin-bottom:10px;
+    }
+
+    .brand{
+      color:#555;
+      font-weight:bold;
+      margin-bottom:20px;
+    }
+
+    .price{
+      margin-bottom:20px;
+      font-size:22px;
+    }
+
+    .new-price{
+      color:#17233c;
+      font-weight:bold;
+    }
+
+    .old-price{
+      color:gray;
+      text-decoration:line-through;
+      margin-left:10px;
+      font-size:18px;
+    }
+
+    .discount{
+      margin-left:10px;
+      color:#222;
+      font-weight:bold;
+    }
+
+    .description{
+      color:#555;
+      line-height:1.8;
+      margin-bottom:20px;
+    }
+
+    .rating{
+      margin-bottom:20px;
+      color:#f4b400;
+      font-size:18px;
+    }
+
+    .rating span{
+      color:#444;
+      font-size:15px;
+      margin-left:10px;
+    }
+
+    /* QUANTITY */
+
+    .quantity{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      margin-bottom:25px;
+    }
+
+    .quantity button{
+      width:35px;
+      height:35px;
+      border:none;
+      background:#17233c;
+      color:white;
+      font-size:20px;
+      border-radius:4px;
+      cursor:pointer;
+    }
+
+    .quantity input{
+      width:50px;
+      text-align:center;
+      padding:8px;
+    }
+
+    /* BUTTON */
+
+    .cart-btn{
+      width:100%;
+      padding:15px;
+      background:#17233c;
+      color:white;
+      border:none;
+      border-radius:8px;
+      font-size:20px;
+      cursor:pointer;
+      margin-bottom:30px;
+    }
+
+    /* OFFER BOX */
+
+    .offer{
+      border:1px solid #ddd;
+      padding:25px;
+      text-align:center;
+      border-radius:8px;
+      background:#fafafa;
+    }
+
+    .offer h3{
+      margin-bottom:10px;
+      color:#17233c;
+    }
+
+    .offer p{
+      color:#555;
+      margin-bottom:15px;
+    }
+
+    .offer button{
+      background:#17233c;
+      color:white;
+      border:none;
+      padding:10px 20px;
+      border-radius:5px;
+      cursor:pointer;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+
+  <div class="navbar">
+
+    <div class="logo">
+      TIMELESS WATCHES
+    </div>
+
+    <input type="text" class="search-box" placeholder="Search...">
+
+    <div class="nav-links">
+      <a href="#">Shop</a>
+      <a href="#">New Arrivals</a>
+      <a href="#">Brands</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+
+  </div>
+
+  <!-- MAIN SECTION -->
+
+  <div class="container">
+
+    <!-- LEFT -->
+
+    <div class="left">
+
+      <div class="main-image">
+        <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?q=80&w=1200&auto=format&fit=crop" alt="Watch">
+      </div>
+
+      <div class="gallery">
+
+        <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?q=80&w=300&auto=format&fit=crop">
+
+        <img src="https://images.unsplash.com/photo-1547996160-81dfa63595aa?q=80&w=300&auto=format&fit=crop">
+
+        <img src="https://images.unsplash.com/photo-1434056886845-dac89ffe9b56?q=80&w=300&auto=format&fit=crop">
+
+        <img src="https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?q=80&w=300&auto=format&fit=crop">
+
+        <img src="https://images.unsplash.com/photo-1508057198894-247b23fe5ade?q=80&w=300&auto=format&fit=crop">
+
+      </div>
+
+    </div>
+
+    <!-- RIGHT -->
+
+    <div class="right">
+
+      <h1>Elegant Luxury Watch</h1>
+
+      <div class="brand">
+        PRESTIGE TIME CO.
+      </div>
+
+      <div class="price">
+
+        <span class="new-price">$499.99</span>
+
+        <span class="old-price">$799.99</span>
+
+        <span class="discount">38% OFF</span>
+
+      </div>
+
+      <div class="description">
+        This luxurious timepiece combines elegance with precision craftsmanship.
+        Perfect for formal occasions or everyday wear, it features premium
+        materials and impeccable design.
+      </div>
+
+      <div class="rating">
+        ★★★★★
+        <span>Rated 4.8/5 (256 reviews)</span>
+      </div>
+
+      <!-- QUANTITY -->
+
+      <div class="quantity">
+
+        <button>-</button>
+
+        <input type="text" value="1">
+
+        <button>+</button>
+
+      </div>
+
+      <!-- CART BUTTON -->
+
+      <button class="cart-btn">
+        Add to Bag
+      </button>
+
+      <!-- OFFER -->
+
+      <div class="offer">
+
+        <h3>Limited-Time Offer!</h3>
+
+        <p>
+          Get an additional 10% off your first purchase
+          when you sign up for our newsletter.
+        </p>
+
+        <button>Sign Up Now</button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
